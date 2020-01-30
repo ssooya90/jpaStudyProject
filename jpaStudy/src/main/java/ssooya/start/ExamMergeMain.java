@@ -9,7 +9,7 @@ import javax.persistence.Persistence;
  * Created by ssooya90@naver.com on 2020-01-29
  * Github : http://github.com/ssooya90
  */
-public class ExamMergetMain {
+public class ExamMergeMain {
 
 	static EntityManagerFactory emf = Persistence.createEntityManagerFactory("ssooya");
 
@@ -58,6 +58,8 @@ public class ExamMergetMain {
 		System.out.println("em2 contains member = " + em2.contains(member));
 
 		System.out.println("em2 contains mergeMember =" + em2.contains(mergeMember));
+
+		// contains를 통해 컨텍스트에 entity가 있는지 확인한다.
 
 		em2.close();
 	}
