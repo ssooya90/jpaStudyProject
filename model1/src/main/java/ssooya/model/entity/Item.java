@@ -10,7 +10,9 @@ import javax.persistence.Id;
 @Entity
 @Data
 public class Item {
-	@Id @GeneratedValue
+
+	@Id
+	@GeneratedValue
 	@Column(name = "ITEM_ID")
 	private Long id;
 
