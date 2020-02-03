@@ -2,9 +2,10 @@ package ssooya.model.entity;
 
 import lombok.Data;
 
-import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 @Entity
 @Data
@@ -18,7 +19,4 @@ public class Item {
 	private String name; // 이름
 	private int price; // 가격
 	private int stockQuantity; // 재고수량
-
-	@ManyToMany(mappedBy = "items")
-	private List<Category> categories = new ArrayList<Category>();
 }
