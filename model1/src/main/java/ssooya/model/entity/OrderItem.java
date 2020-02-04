@@ -9,6 +9,7 @@ import javax.persistence.*;
 @Table(name="ORDER_ITEM")
 public class OrderItem {
 
+	// 테스트
 	@Id @GeneratedValue
 	@Column(name ="ORDER_ITEM_ID")
 	private Long id;
