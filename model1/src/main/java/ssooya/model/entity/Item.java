@@ -11,6 +11,7 @@ import javax.persistence.Id;
 @Data
 public class Item {
 
+	// 테스트
 	@Id
 	@GeneratedValue
 	@Column(name = "ITEM_ID")
