@@ -1,4 +1,4 @@
-package ssooya.model.entity.item;
+package ssooya.model.entity.ch07.item;
 
 import lombok.Data;
 
