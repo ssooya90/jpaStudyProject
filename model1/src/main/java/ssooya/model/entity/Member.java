@@ -1,7 +1,6 @@
 package ssooya.model.entity;
 
 import lombok.Data;
-import ssooya.model.entity.ch07.BaseEntity;
 
 import javax.persistence.*;
 import java.util.ArrayList;

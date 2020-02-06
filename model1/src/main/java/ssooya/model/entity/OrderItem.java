@@ -1,6 +1,7 @@
 package ssooya.model.entity;
 
 import lombok.Data;
+import ssooya.model.entity.item.Item;
 
 import javax.persistence.*;
 
