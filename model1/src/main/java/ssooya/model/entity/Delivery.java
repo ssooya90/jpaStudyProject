@@ -15,7 +15,7 @@ public class Delivery {
 	@Id @GeneratedValue @Column
 	private Long id;
 
-	@OneToOne(mappedBy = "deliery")
+	@OneToOne(mappedBy = "delivery")
 	private Order order;
 
 	private String city;

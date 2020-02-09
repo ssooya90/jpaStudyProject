@@ -22,11 +22,15 @@ public class Order extends BaseEntity{
 //	private Long memberId;
 
 	// 양방향
-	@ManyToOne
+	@ManyToOne(fetch = FetchType.LAZY) // 지연로딩 fetch = FetchType.LAZY
 	@JoinColumn(name = "MEMBER_ID")
 	private Member member;
 
-	@OneToMany(mappedBy = "order")
+	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY) // 지연로딩
+	@JoinColumn(name ="DELIVERY_ID")
+	private Delivery delivery;
+
+	@OneToMany(mappedBy = "order" , cascade = CascadeType.ALL) // 영속성 전이 설정
 	private List<OrderItem> orderItems = new ArrayList<OrderItem>();
 
 	@Temporal(TemporalType.TIMESTAMP)
