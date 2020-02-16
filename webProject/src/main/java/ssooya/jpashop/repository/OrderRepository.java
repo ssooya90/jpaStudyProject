@@ -42,7 +42,7 @@ public class OrderRepository {
 			Predicate status = cb.equal(o.get("status"), orderSearch.getOrderStatus());
 			criteria.add(status);
 		}
-
+ 
 		// 회원 이름 검색
 		if(StringUtils.hasText(orderSearch.getMemberName())){
 
