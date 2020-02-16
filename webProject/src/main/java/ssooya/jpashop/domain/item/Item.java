@@ -24,7 +24,7 @@ public abstract class Item {
 	private Long id;
 
 	private String name;
-	private int price;
+	private int price; // 주석
 	private int stockQuantity;
 
 	@ManyToMany(mappedBy = "items")
